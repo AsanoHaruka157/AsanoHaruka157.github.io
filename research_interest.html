@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Interest</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root { --primary-color: #1a365d; --secondary-color: #d4af37; --light-color: #f8f9fa; --dark-color: #212529; --accent-color: #2c5282; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333; background-color: #f5f7fa; }
+        .navbar { background-color: var(--primary-color); box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .navbar-brand { font-weight: 700; color: white !important; }
+        .nav-link { color: rgba(255,255,255,0.85) !important; font-weight: 500; margin: 0 5px; transition: all 0.3s; }
+        .nav-link:hover { color: var(--secondary-color) !important; }
+        .section-title { position: relative; margin: 30px 0 25px; text-align: left; color: var(--primary-color); font-weight: 700; }
+        .section-title:after { content: ''; display: block; width: 80px; height: 4px; background: var(--secondary-color); margin: 12px 0 0; }
+        .footer { background: var(--primary-color); color: white; padding: 24px 0; text-align: center; margin-top: 48px; }
+        .skill-badge { background: #e9ecef; color: var(--dark-color); padding: 8px 15px; border-radius: 30px; font-size: 0.9rem; margin: 5px; display: inline-block; }
+        .project-card { background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: all 0.3s; margin-bottom: 30px; height: 100%; }
+        .project-card:hover { transform: translateY(-6px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+        .project-img { width: 100%; height: 250px; object-fit: cover; }
+        .project-content { padding: 25px; }
+        .project-title { color: var(--primary-color); font-weight: 700; margin-bottom: 12px; }
+        .container-narrow { max-width: 960px; }
+        a.ref { text-decoration: none; }
+        .refback { font-size: 0.85rem; }
+        .cite { vertical-align: super; font-size: 0.8em; }
+        .content { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
+        .back { margin-bottom: 14px; }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-user-graduate me-2"></i>Yilin Li</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Brief</a></li>
+        <li class="nav-item"><a class="nav-link" href="cv.html">CV</a></li>
+        <li class="nav-item"><a class="nav-link" href="research_experience.html">Research Experience</a></li>
+        <li class="nav-item"><a class="nav-link" href="research_interest.html">Research Interest</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="container container-narrow mt-4">
+
+<section class="content" id="top">
+  <div class="back"><a href="index.html" class="btn btn-sm btn-outline-secondary"><i class="fas fa-arrow-left me-1"></i>Back to Brief</a></div>
+<h2 class="section-title">Research Interest</h2>
+<h3>1. Optimization</h3>
+<p><strong>Optimization Theory</strong> — boundary estimation for model performance and the training process. Possible research tools include KKT conditions<a class='ref cite' href='#ref6'>[6]</a>.</p>
+<p><strong>Fine-tuning</strong> — focusing on the Hessian matrix spectrum and randomly masked parameter-efficient fine-tuning (PEFT)<a class='ref cite' href='#ref1'>[1]</a><a class='ref cite' href='#ref2'>[2]</a>.</p>
+
+<h3>2. High Performance Computing</h3>
+<p><strong>MLSys</strong> — studying scheduling for training and inference of large models, for instance, task-graph partitioning and pipeline parallelism on multi-GPU and heterogeneous resources to improve end-to-end throughput and latency consistency<a class='ref cite' href='#ref3'>[3]</a>.</p>
+<p><strong>Federated and edge learning</strong> — for example, the limitations of differential privacy and better privacy-preserving methods such as homomorphic encryption<a class='ref cite' href='#ref5'>[5]</a>.</p>
+<p><strong>Reducing model size</strong> — research directions include pruning and sparsification, data storage methods, algorithm limitations, and improvements<a class='ref cite' href='#ref4'>[4]</a>.</p>
+
+<h3>3. AI Healthcare</h3>
+<p><strong>Nervous system, Physiology and Diseases</strong> - I am working on the physiological basis, course of disease, and personalized prediction and treatment of diseases such as Alzheimer's disease. In the future may work on depression, anxiety, and vestibular migraine.</p>
+<p><strong>Medical Image Processing</strong> - May focus on MRI figure segementation, Multimodal image fusion, 3D reconstruction</p>
+<p><strong>AI Healthcare Agent</strong> - Developing knowledge-enhanced, interpretable large models for personalized medicine and auxiliary diagnosis</p>
+
+<h3>4. Applied Mathematics</h3>
+<p><strong>Operation Research</strong> - Quantative finance, Machine learning</p>
+  <h4 class="mt-4">References</h4>
+  <div id="references">
+    <ol>
+      <li id='ref1'> Investigating the Overlooked Hessian Structure: From CNNs to LLMs <a class='refback' href='#top'>↩︎ Back</a></li>
+      <li id='ref2'> Random Masking Finds Winning Tickets for Parameter Efficient Fine-tuning <a class='refback' href='#top'>↩︎ Back</a></li>
+      <li id='ref3'> LEMIX: Unified Scheduling for LLM Training and Inference on Multi-GPU Systems <a class='refback' href='#top'>↩︎ Back</a></li>
+      <li id='ref4'> SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs <a class='refback' href='#top'>↩︎ Back</a></li>
+      <li id='ref5'> The Limits of Differential Privacy in Online Learning <a class='refback' href='#top'>↩︎ Back</a></li>
+      <li id='ref6'> KKT Conditions and Optimization Theory <a class='refback' href='#top'>↩︎ Back</a></li>
+    </ol>
+  </div>
+</section>
+    
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="mb-0">&copy; Yilin Li's Personal Academic Webpage</p>
+    <p class="mb-0">Email: 2113840@mail.nankai.edu.cn</p>
+  </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

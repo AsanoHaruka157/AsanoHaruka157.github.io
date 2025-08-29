@@ -1,2 +1,2 @@
-# AsanoHaruka157.github.io
-Yilin Li's personal website
+# NagasakiSoyo157.github.io
+Yilin Li's personal webpage
