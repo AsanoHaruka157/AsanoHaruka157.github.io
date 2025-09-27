@@ -85,39 +85,6 @@
     <a class="btn btn-outline-dark" href="research_interest.html"><i class="fas fa-lightbulb me-1"></i>Research Interest</a>
   </div>
 </section>
-<!-- Visitor Counter -->
-<p id="visitor-counter" class="mt-4">Counting visitors…</p>
-<script>
-  (function () {
-    const NAMESPACE = 'yilinli_academic_site';
-    const KEY = 'homepage_v1';
-    const el = document.getElementById('visitor-counter');
-
-    function show(n) {
-      el.textContent = `You are the ${n}-th visitor to this page.`;
-    }
-
-    // Fallback using localStorage in case the API is blocked
-    function fallback() {
-      try {
-        const k = 'visitorCounterCache';
-        const n = (parseInt(localStorage.getItem(k) || '0', 10) || 0) + 1;
-        localStorage.setItem(k, String(n));
-        show(n + ' (local)');
-      } catch (e) {
-        el.textContent = 'Welcome!';
-      }
-    }
-
-    fetch(`https://api.countapi.xyz/hit/${encodeURIComponent(NAMESPACE)}/${encodeURIComponent(KEY)}`)
-      .then(r => r.json())
-      .then(data => {
-        if (data && typeof data.value === 'number') show(data.value);
-        else fallback();
-      })
-      .catch(fallback);
-  })();
-</script>
 
 <!-- Visitor Map (ClustrMaps) -->
 <div style="margin-top:20px;">
