@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +28,26 @@
         .cite { vertical-align: super; font-size: 0.8em; }
         .content { background: white; border-radius: 12px; padding: 24px; box-shadow: 0 5px 15px rgba(0,0,0,0.05); }
         .back { margin-bottom: 14px; }
+        
+        /* 新增样式 */
+        .interest-section h3 {
+            color: var(--accent-color);
+            font-weight: 600;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #eee;
+        }
+        .interest-section p {
+            line-height: 1.7;
+        }
+        .interest-section ul {
+            padding-left: 20px;
+        }
+        .interest-section li {
+            margin-bottom: 8px;
+        }
+
     </style>
 </head>
 <body>
@@ -52,36 +71,37 @@
 
 <section class="content" id="top">
   <div class="back"><a href="index.html" class="btn btn-sm btn-outline-secondary"><i class="fas fa-arrow-left me-1"></i>Back to Brief</a></div>
-<h2 class="section-title">Research Interest</h2>
-<h3>1. Optimization</h3>
-<p><strong>Optimization Theory</strong> — boundary estimation for model performance and the training process. Possible research tools include KKT conditions.</p>
-<p><strong>Fine-tuning</strong> — focusing on the Hessian matrix spectrum and randomly masked parameter-efficient fine-tuning (PEFT)<a class='ref cite' href='#ref1'>[1]</a><a class='ref cite' href='#ref2'>[2]</a>.</p>
+  <h2 class="section-title">Research Interest</h2>
 
-<h3>2. High Performance Computing</h3>
-<p><strong>MLSys</strong> — studying scheduling for training and inference of large models, for instance, task-graph partitioning and pipeline parallelism on multi-GPU and heterogeneous resources to improve end-to-end throughput and latency consistency<a class='ref cite' href='#ref3'>[3]</a>.</p>
-<p><strong>Federated and edge learning</strong> — for example, the limitations of differential privacy and better privacy-preserving methods such as homomorphic encryption<a class='ref cite' href='#ref5'>[5]</a>.</p>
-<p><strong>Reducing model size</strong> — research directions include pruning and sparsification, data storage methods, algorithm limitations, and improvements<a class='ref cite' href='#ref4'>[4]</a>.</p>
+  <div class="interest-section">
+    <p class="lead">My research interest lies at the intersection of <strong>Machine Learning</strong> and <strong>Bioinformatics / Precision Medicine</strong>. My goal is to develop novel computational frameworks to solve critical, unresolved challenges in human health, framing my methodological research (ML) within the direct application context of healthcare.</p>
 
-<h3>3. AI Healthcare</h3>
-<p><strong>Nervous system, Physiology and Diseases</strong> - I am working on the physiological basis, course of disease, and personalized prediction and treatment of diseases such as Alzheimer's disease. In the future may work on depression, anxiety, and vestibular migraine.</p>
-<p><strong>Medical Image Processing</strong> - May focus on MRI figure segementation, Multimodal image fusion, 3D reconstruction</p>
-<p><strong>Bioinformatics/Biostats</strong> - I have substaintial experience and research interest on Single-Cell data analysis, including machine learning methods and statistical methods.<a class='ref cite' href='https://github.com/AsanoHaruka157/Open-Problems---Multimodal-Single-Cell-Integration'>[7] (My GitHub project: Open-Problems---Multimodal-Single-Cell-Integration)</a></p>
-<p><strong>AI Healthcare Agent</strong> - Developing knowledge-enhanced, interpretable large models for personalized medicine and auxiliary diagnosis</p>
+    <h3 id="ml">1. Machine Learning for Robust & Secure Healthcare</h3>
+    <p>I focus on building ML systems that are private, efficient, and reliable enough for real-world clinical and personal health applications.</p>
+    <ul>
+      <li>
+        <strong>Federated Learning (FL) & Privacy:</strong> Researching robust and fair FL algorithms to handle heterogeneous data from multiple hospitals (multi-centric studies) without compromising patient privacy.
+      </li>
+      <li>
+        <strong>HPC, MLSys & Edge Computing:</strong> Developing efficient AI software for smart wearable health monitoring devices. This includes on-device processing and inference, enabling real-time diagnostics and alerts while preserving user data locally.
+      </li>
+    </ul>
 
-<h3>4. Applied Mathematics</h3>
-<p><strong>PDE/ODE Modeling</strong> - I am interested in the modeling and numerical solution of PDEs and ODEs, as well as mathematical modeling using PDE/ODE for real-world problems<a class='ref cite' href='https://github.com/AsanoHaruka157/Personalized-Alzhemer-s-Disease-Neural-Network-Model'>[8] (My GitHub project: Personalized-Alzhemer-s-Disease-Neural-Network-Model)</a></p>
-<p><strong>Quantative Finance</strong> - For example, asset pricing problems based on PDE</p>
-  <h4 class="mt-4">References</h4>
-  <div id="references">
-    <ol>
-      <li id='ref1'><a href="https://openreview.net/forum?id=o62ZzfCEwZ&noteId=j6GImKzqjc">Investigating the Overlooked Hessian Structure: From CNNs to LLMs</a> <a class='refback' href='#top'>↩︎ Back</a></li>
-      <li id='ref2'><a href="https://arxiv.org/abs/2405.02596">Random Masking Finds Winning Tickets for Parameter Efficient Fine-tuning</a> <a class='refback' href='#top'>↩︎ Back</a></li>
-      <li id='ref3'><a href="https://arxiv.org/abs/2507.21276">LEMIX: Unified Scheduling for LLM Training and Inference on Multi-GPU Systems</a> <a class='refback' href='#top'>↩︎ Back</a></li>
-      <li id='ref4'><a href="https://dl.acm.org/doi/10.1145/3689031.3717481">SpInfer: Leveraging Low-Level Sparsity for Efficient Large Language Model Inference on GPUs</a> <a class='refback' href='#top'>↩︎ Back</a></li>
-      <li id='ref5'><a href="https://arxiv.org/abs/2411.05483">The Limits of Differential Privacy in Online Learning</a> <a class='refback' href='#top'>↩︎ Back</a></li>
-    </ol>
+    <h3 id="bio-ai-health">2. Bioinformatics, Biostats, and AI Healthcare</h3>
+    <p>My ultimate aspiration is to apply these computational tools to improve human well-being, from fundamental genomic understanding to clinical decision support.</p>
+    <ul>
+      <li>
+        <strong>Bioinformatics & Biostats:</strong> Developing statistical models for genomics and inferring gene regulatory networks (GRNs). This provides the mechanistic foundation for understanding complex disease pathologies.
+      </li>
+      <li>
+        <strong>Nervous System & Physiology:</strong> Using quantitative and computational modeling (e.g., mechanistic ODEs) to understand the pathology of complex conditions like Alzheimer's disease. I am also interested in exploring AI-driven models for psychotherapy, with the fundamental goal of improving human well-being.
+      </li>
+      <li>
+        <strong>Core Aspiration: Multimodal Disease Dynamics Modeling:</strong> My primary research vision is to build hybrid models that create a comprehensive, dynamic picture of disease progression. This involves fusing diverse data types—such as <strong>single-cell transcriptomics</strong>, <strong>proteomics</strong>, <strong>flow cytometry</strong>, <strong>medical imaging (MRI)</strong>, and <strong>clinical text (EHRs)</strong>—into a unified framework. I aim to use methods like <strong>Neural Ordinary Differential Equations (NODEs)</strong> and <strong>Transformers (GPTs)</strong> to model disease evolution over time, enabling personalized prognosis and <i>in-silico</i> drug screening.
+      </li>
+    </ul>
   </div>
-</section>
+  </section>
     
 </div>
 <footer class="footer">
